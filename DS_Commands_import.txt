@@ -1,3 +1,8 @@
-pushd D:\IBM\InformationServer\Clients\istools\cli 
+1) Open Windows command prompt
+2) Change to folder where istool script is present - pushd D:\IBM\InformationServer\Clients\istools\cli 
+3) import the isx file by triggering istool script - istool import -dom ANR-PC:9443 -u isadmin -p Admin123 -ar C:\Users\ANR\Downloads\DSProj.isx -ds ANR-PC/ANRTRAININGS
 
-istool import -dom ANR-PC:9443 -u isadmin -p Admin123 -ar C:\Users\ANR\Downloads\DSProj.isx -ds ANR-PC/ANRTRAININGS
+domain - ANR-PC:9443
+isx location with file name - C:\Users\ANR\Downloads\DSProj.isx
+domain name with project name - ANR-PC/ANRTRAININGS
+
