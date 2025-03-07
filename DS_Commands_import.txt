@@ -1,0 +1,3 @@
+pushd D:\IBM\InformationServer\Clients\istools\cli 
+
+istool import -dom ANR-PC:9443 -u isadmin -p Admin123 -ar C:\Users\ANR\Downloads\DSProj.isx -ds ANR-PC/ANRTRAININGS
