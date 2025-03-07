@@ -1,3 +1,17 @@
+Steps to Import ISX
+
+Method 1:
+
+1) Search for IBM InfoSphere Information Server Command Line Interface and open it .
+2) You will get a command prompt with istool
+3) Give the below command to import the neccessary isx file 
+General Command:
+import -dom <domainname:port> -u <username> -p <Password> -ar <Actual path of ISX> -ds <DOMAIN/DS Project where ISX needs to Imported> 
+Specific Command with particular ISX with all values
+import -dom ANR-PC:9443 -u isadmin -p Admin123 -ar C:\Users\ANR\Downloads\DSProj.isx -ds ANR-PC/ANRTRAININGS
+
+Method 2:
+
 1) Open Windows command prompt
 2) Change to folder where istool script is present - pushd D:\IBM\InformationServer\Clients\istools\cli 
 3) import the isx file by triggering istool script - istool import -dom ANR-PC:9443 -u isadmin -p Admin123 -ar C:\Users\ANR\Downloads\DSProj.isx -ds ANR-PC/ANRTRAININGS
@@ -5,4 +19,3 @@
 domain - ANR-PC:9443
 isx location with file name - C:\Users\ANR\Downloads\DSProj.isx
 domain name with project name - ANR-PC/ANRTRAININGS
-
